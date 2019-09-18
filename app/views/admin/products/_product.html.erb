@@ -11,7 +11,7 @@
     <%= product.category.name %>
   </td>
   <td>
-    <%= product.price %>
+    <%= sprintf("$%2.2f", product.price) %>
   </td>
   <td>
     <%= product.quantity %>
