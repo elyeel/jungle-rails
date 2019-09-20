@@ -1,9 +1,16 @@
+
+<div class="login">
 <h1>Login</h1>
-
-<%= form_tag '/login' do %>
-
-  Email: <%= text_field_tag :email %>
-  Password: <%= password_field_tag :password %>
+  <%= form_tag '/login' do %>
+  <div>
+  Email<br> <%= text_field_tag :email, nil, placeholder: 'your@email.here'  %>
+  
+  </div>
+  <br>
+  <div>
+  Password<br> <%= password_field_tag :password, nil, placeholder: "password" %>
+  </div>
+  <br>
   <%= submit_tag "Submit" %>
-
+</div>
 <% end %>
