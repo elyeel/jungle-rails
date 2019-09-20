@@ -1,4 +1,5 @@
 class OrdersController < ApplicationController
+  before_filter :authorize # to ensure logged in user only can access
 
   def show
     @order = Order.find(params[:id])
