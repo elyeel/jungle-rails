@@ -13,7 +13,7 @@ RSpec.feature "AddToCarts", type: :feature, js: true do
     
   end
 
-  scenario "They see a products" do
+  scenario "A user can login with valid email and password" do
     # ACT
     visit root_path
     visit "/login"
